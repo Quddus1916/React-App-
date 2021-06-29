@@ -2,15 +2,15 @@ import React from 'react'
 
 function Hello(props){
 
-    function Do(){
-        alert("button clicked")
+    function Do(variable){
+        alert(variable)
     }
     
     return(
         <div>
             
              <h1>Name: {props.name} Age: {props.age}</h1>
-             <button onClick={Do}>click here</button>
+             <button onClick={Do.bind(this,"hello i am from parameter")}>click here</button>
         </div>
    )
 }

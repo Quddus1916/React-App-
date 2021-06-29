@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
 class Welcome extends Component{
     
-    do(){
-        alert("class btn clicked")
+    do(a){
+        alert(a)
     }
     
     
@@ -11,7 +11,7 @@ class Welcome extends Component{
             <div>
                 
                 <h1>name:{this.props.name} Age:{this.props.age}</h1>
-                <button onClick={this.do}>click here 2</button>
+                <button onClick={this.do.bind(this,"parameter")}>click here 2</button>
             </div>
         )
     }
