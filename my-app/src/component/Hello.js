@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Hello(){
-    return(<h1>i am from functional component</h1>)
+function Hello(props){
+    return(<h1>Name: {props.name} Age: {props.age}</h1>)
 }
 
 export default Hello
